@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Apply font globally */
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* vertical */
+    align-items: center;
+}
+
+
+/* Message */
+
+.message {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    color: #555;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.message i {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.message i:hover {
+    color: black;
+}
+
+
+/* Login box */
+
+.box {
+    width: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box input,
+.box select,
+.box button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.box button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #34495e;
+}
+
+.box a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+
+/*navigation bar*/
+
+
+/* Navbar Container */
+
+
+/* Navbar Container */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
+    /* Prevent content from hiding behind navbar */
+}
+
+
+/* Logo */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .logo i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.navbar .logo img {
+    width: 14rem;
+    height: 15rem;
+}
+
+
+/* Navigation Links */
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li a i {
+    margin-right: 5px;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Right-side Icons */
+
+.navbar .nav-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .nav-icons a:hover {
+    opacity: 0.8;
+}
+
+
+/*home page*/
+
+
+/* Main container to arrange sections in a vertical row */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    /* stack sections vertically */
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* Welcome Section */
+
+.home-welcome {
+    text-align: center;
+    padding: 120px 20px 60px 20px;
+    background: #2c3e50;
+    color: white;
+    flex-shrink: 0;
+    height: 50vh;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.home-welcome h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.home-welcome p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    background: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-main:hover {
+    background: #d35400;
+}
+
+
+/* Quick Cards Section - still column layout inside section */
+
+
+/* Quick Cards Section */
+
+.quick-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* automatically create columns */
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    /* overall container width */
+    margin: auto;
+}
+
+
+/* Card Styles */
+
+.card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.btn-card {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-card:hover {
+    background: #34495e;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .quick-cards {
+        grid-template-columns: 1fr;
+        /* single column on small screens */
+    }
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 7px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+    flex-shrink: 0;
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Dashboard welcome section */
+
+.dashboard-container {
+    padding: 30px 20px;
+}
+
+.dashboard-welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-welcome h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.dashboard-welcome p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Quick cards layout - grid for two rows */
+
+.quick-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+/* Card style */
+
+.card {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.btn-card {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-card:hover {
+    background: #34495e;
+}
+
+
+/* Responsive adjustments */
+
+@media(max-width: 768px) {
+    .quick-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .home-welcome h1 {
+        font-size: 28px;
+    }
+    .home-welcome p {
+        font-size: 16px;
+    }
+}
+
+.btn-back:hover {
+    background: #34495e;
+}
+
+
+/* Responsive adjustments */
+
+@media(max-width: 768px) {
+    .quick-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .home-welcome h1 {
+        font-size: 28px;
+    }
+    .home-welcome p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .box {
+        max-width: 100%;
+        /* full width on tablets */
+        padding: 18px;
+        margin-top: 12px;
+    }
+    .message {
+        font-size: 13px;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .box input,
+    .box select,
+    .box button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
